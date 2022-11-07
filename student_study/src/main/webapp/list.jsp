@@ -5,12 +5,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>리스트</title>
 </head>
 <body>
+<table>
 <c:forEach var="student" items="${list}">
-${student.seq}
-<a href="">상세정보로 이동하기</a>
+<tr>
+	<td>${student.seq}</td>
+	<td>${student.name}
+		<a href="/student_study/student/info.do?seq=${student.seq}">상세정보로 이동하기</a>
+	</td>
+</tr>
 </c:forEach>
+</table>
 </body>
 </html>
