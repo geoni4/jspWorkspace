@@ -11,11 +11,12 @@ public class InfoAction implements ActionCommand {
 
 	@Override
 	public String action(HttpServletRequest request, HttpServletResponse response) {
-		int seq = Integer.parseInt(request.getParameter("seq"));
+		int id = Integer.parseInt(request.getParameter("id"));
 		
-		Student student = service.find(seq);
+		Student student = service.find(id);
 		
 		request.setAttribute("student", student);
+		
 		return "/info.jsp";
 	}
 

@@ -1,46 +1,48 @@
 package model;
 
+import java.sql.Date;
+
 public class Student {
-	private int seq;
-	private String name;
-	private String school;
-	private String birth;
+	private int id;
+	private String username;
+	private String univ;
+	private Date birth;
 	private String email;
 	
 	
-	public Student(int seq, String name, String school, String birth, String email) {
-		this.seq = seq;
-		this.name = name;
-		this.school = school;
+	
+	
+	public Student() {
+	}
+	public Student(int id, String username, String univ, Date birth, String email) {
+		this.id = id;
+		this.username = username;
+		this.univ = univ;
 		this.birth = birth;
 		this.email = email;
 	}
-	public Student() {
+	public int getId() {
+		return id;
 	}
-	
-	
-	public int getSeq() {
-		return seq;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public void setSeq(int seq) {
-		this.seq = seq;
+	public String getUsername() {
+		return username;
 	}
-	public String getName() {
-		return name;
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public String getUniv() {
+		return univ;
 	}
-	public String getSchool() {
-		return school;
+	public void setUniv(String univ) {
+		this.univ = univ;
 	}
-	public void setSchool(String school) {
-		this.school = school;
-	}
-	public String getBirth() {
+	public Date getBirth() {
 		return birth;
 	}
-	public void setBirth(String birth) {
+	public void setBirth(Date birth) {
 		this.birth = birth;
 	}
 	public String getEmail() {
@@ -51,10 +53,11 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [seq=" + seq + ", name=" + name + ", school=" + school + ", birth=" + birth + ", email=" + email
-				+ "]";
+		return "Student [id=" + id + ", username=" + username + ", univ=" + univ + ", birth=" + birth + ", email="
+				+ email + "]";
 	}
 	
 	
+
 	
 }

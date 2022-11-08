@@ -8,7 +8,11 @@
 </head>
 <body>
 <h2>상세정보</h2>
-${student.seq } ${student.name } ${student.school } ${student.birth} ${student.email}<br/>
+${student.id }<br/>
+${student.username }<br/>
+${student.univ }<br/>
+${student.birth}<br/>
+${student.email}<br/>
 <a href="/student_study/student/list.do">리스트로 이동하기</a>
 </body>
 </html>
