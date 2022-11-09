@@ -5,24 +5,24 @@ public class Product {
 	private String name;
 	private String maker;
 	private int price;
-	private String date;
+	private String regdate;
 	
 	
 	
 	public Product() {
 	}
 
-	public Product(String id, String name, String maker, int price, String date) {
+	public Product(String id, String name, String maker, int price, String regdate) {
 		this.id = id;
 		this.name = name;
 		this.maker = maker;
 		this.price = price;
-		this.date = date;
+		this.regdate = regdate;
 	}
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", maker=" + maker + ", price=" + price + ", date=" + date
+		return "Product [id=" + id + ", name=" + name + ", maker=" + maker + ", price=" + price + ", regdate=" + regdate
 				+ "]";
 	}
 
@@ -58,12 +58,12 @@ public class Product {
 		this.price = price;
 	}
 
-	public String getDate() {
-		return date;
+	public String getRegdate() {
+		return regdate;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
 	}
 	
 	

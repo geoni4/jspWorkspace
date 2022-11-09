@@ -14,7 +14,11 @@
   <li>상품명: ${p.name}</li>
   <li>제조사: ${p.maker}</li>
   <li>가격: ${p.price}</li>
-  <li>등록일자: ${p.date}</li>
+  <li>등록일자: ${p.regdate}</li>
 </ul>
+<div >
+<a href="/jwbook/pcontrol?action=list">리스트로 돌아가기</a>
+<a href="/jwbook/pcontrol?action=updateForm&id=${p.id}">수정하기</a>
+</div>
 </body>
 </html>
