@@ -87,7 +87,6 @@ public class NewsController extends HttpServlet {
 	}
 	
 	public String addNews(HttpServletRequest request) {
-		
 		News n = new News();
 		try {
 	        Part part = request.getPart("file");
